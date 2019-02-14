@@ -29,6 +29,7 @@ public class JNIRestService {
         return w.sum(num1, num2);
     }
 
+    // TODO Pasar a JNI
     @RequestMapping(value = "/img", method = RequestMethod.GET)
     public void img(HttpServletResponse response) throws IOException {
         InputStream in = JNIRestService.class.getClassLoader().getResourceAsStream("images/doge.jpg");
